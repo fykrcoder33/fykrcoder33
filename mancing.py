@@ -6,7 +6,7 @@ from telethon import TelegramClient, events, utils, Button
 
 api_id = 2394927 
 api_hash = '4ab4c48f456d11a2aef03310c88c0b81'
-sesi_file = 'mancing-fnz'
+sesi_file = 'casino'
 
 bot_id = 'KampungMaifamBot'
 Area = input('Area = ')
@@ -20,6 +20,12 @@ with TelegramClient(sesi_file, api_id, api_hash) as client:
 
 
             if "Kamu berhasil" in pesan:
+                time.sleep(1)
+                await event.respond(Area)
+                print(pesan)
+                return
+
+            elif "Kamu mendapat" in pesan:
                 time.sleep(1)
                 await event.respond(Area)
                 print(pesan)

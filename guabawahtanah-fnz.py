@@ -6,7 +6,7 @@ from telethon import TelegramClient, events, utils, Button
 
 api_id = 2394927 
 api_hash = '4ab4c48f456d11a2aef03310c88c0b81'
-sesi_file = 'guabawahtanah-fnz'
+sesi_file = 'guabawahtanah2-fnz'
 
 bot_id = 'KampungMaifamXBot'
 Area = 'Gua Bawah Tanah'
@@ -39,8 +39,7 @@ with TelegramClient(sesi_file, api_id, api_hash) as client:
                 
             elif 'Energi berhasil' in pesan:
                 time.sleep(2)
-                await event.click(text=Alat)
-                print('Lanjot Gan')
+                await event.respond(Area) 
                 return
             
             else :

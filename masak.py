@@ -8,7 +8,7 @@ api_id = 2394927
 api_hash = '4ab4c48f456d11a2aef03310c88c0b81'
 sesi_file = 'masak-masak-fnz'
 
-bot_id = 'KampungMaifamXBot'
+bot_id = 'KampungMaifamBot'
 Masak = input('Masak Apa (input command, contoh /masak_bacon_100) = ')
 
 with TelegramClient(sesi_file, api_id, api_hash) as client:

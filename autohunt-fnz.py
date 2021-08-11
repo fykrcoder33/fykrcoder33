@@ -8,7 +8,7 @@ api_id = 2394927
 api_hash = '4ab4c48f456d11a2aef03310c88c0b81'
 sesi_file = 'autohunt-fnz1'
 
-bot_id = 'KampungMaifamXBot'
+bot_id = 'KampungMaifamBot'
 Area = input('Area = ')
 Alat = 'Tangkap'
 
@@ -44,7 +44,7 @@ with TelegramClient(sesi_file, api_id, api_hash) as client:
             elif 'Kamu tidak memiliki' in pesan:
                 time.sleep(2)
                 await event.respond('/restore_max_confirm')
-                print(time.asctime(), 'Isi Ulang Energi')
+                print(time.asctime(), 'Isi Ulang Energi Dulu')
                 return
                 
             elif 'Energi berhasil' in pesan:
